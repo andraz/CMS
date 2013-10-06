@@ -17,7 +17,7 @@
     </div>
     <div class="col-md-3 col-md-offset-4">
         <div class="btn-group pull-right">
-            <button type="button" class="btn btn-default" onclick="setStyle(0)">Style 1</button>
+            <button id="style1" type="button" onload="this.click();" class="btn btn-default" onclick="setStyle(0)">Style 1</button>
             <button type="button" class="btn btn-default" onclick="setStyle(1)">Style 2</button>
             <button type="button" class="btn btn-default">Style 3</button>
         </div>
@@ -52,6 +52,8 @@
         <small class="copyright">&copy; Cork 2013</small>
     </div>
 </div>
-<script src="javascript/script.js" ></script>
+<script src="javascript/script.js" >
+    document.getElementById("style1").click();
+</script>
 </body>
 </html>
