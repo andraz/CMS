@@ -1,3 +1,12 @@
+window.onload = function ()
+{
+    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
+    {
+        setStyle(0);
+    }
+}
+
+
 function showMessage(message){
     alert(message);
 }
